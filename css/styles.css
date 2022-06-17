@@ -1106,6 +1106,10 @@ address {
   border-color: var(--accent-color);
 }
 
+.privacy-check {
+  margin-left: 4px;
+}
+
 .submit {
   /* position: absolute; */
   min-width: 200px;
