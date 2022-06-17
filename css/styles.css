@@ -1080,7 +1080,7 @@ address {
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-font-color);
-
+  color: var(--color-white);
   border-radius: 3px;
   margin-right: 9px;
   margin-left: 12px;
@@ -1090,7 +1090,7 @@ address {
   background-color: var(--accent-color);
   background-image: url(../images/check.svg);
   border: none;
-  color: var(--color-white);
+
   background-repeat: no-repeat;
   background-position: center;
 }
