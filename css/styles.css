@@ -1096,7 +1096,7 @@ address {
 }
 
 .input-privacy {
-  color: var(--color-white);
+  fill: var(--color-white);
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
