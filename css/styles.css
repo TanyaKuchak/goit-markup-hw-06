@@ -696,6 +696,7 @@ address {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: var(--color-white);
   background-color: var(--footer-bg-color);
 }
 .footer-input::placeholder {
@@ -937,11 +938,13 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-btn:hover > .modal-close,
 .modal-btn:focus > .modal-close {
   fill: var(--accent-color);
@@ -951,6 +954,7 @@ address {
 .modal-btn:focus {
   border-color: var(--accent-color);
 }
+
 .modal-title {
   text-align: center;
   font-size: 20px;
@@ -961,6 +965,11 @@ address {
 .form-group {
   /* outline: 1px solid blue; */
   margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-lable {
@@ -994,42 +1003,46 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .input-wrap {
   position: relative;
 }
 
 .modal-icon {
   position: absolute;
+
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--primary-font-color);
+  fill: var(--primary-font-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:not(:placeholder-show),
+
+/* .modal-input:not(:placeholder-show),
 .modal-comment:not(:placeholder-show) {
   border-color: var(--accent-color);
-}
+} */
 
-.modal-input::placeholder {
+/* .modal-input::placeholder {
   color: var(--info-font-color);
   font-size: 12px;
-}
-.modal-icon {
-  fill: currentColor;
+} */
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.modal-icon:hover,
+.modal-icon:focus-within {
+  fill: var(--accent-color);
 }
-.modal-input:focus + .modal-icon,
+
+.modal-input:focus-within + .modal-icon,
 .modal-input:hover + .modal-icon {
   fill: var(--accent-color);
 }
 
-.form-group input:hover,
-.form-group input:focus,
-.form-group textarea:hover,
-.form-group textarea:focus {
+.form-group:hover input,
+.form-group:focus-within input,
+.form-group:hover textarea,
+.form-group:focus-within textarea {
   border-color: var(--accent-color);
 }
 
@@ -1079,18 +1092,22 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .input-privacy {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .input-privacy:focus + .modal-privacy::before {
   border-color: var(--accent-color);
 }
+
 .submit {
-  position: absolute;
-  width: 200px;
-  height: 50px;
+  /* position: absolute; */
+  min-width: 200px;
+  padding-left: 17px;
+  /* height: 50px; */
   border: none;
 
   font-family: 'Roboto';
