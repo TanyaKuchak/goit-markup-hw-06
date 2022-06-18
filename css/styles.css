@@ -1088,7 +1088,7 @@ address {
 
 .input-privacy:checked + .modal-privacy::before {
   background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
+  background-image: url(../images/check1.png);
   border: none;
 
   background-repeat: no-repeat;
