@@ -414,7 +414,14 @@
           <p class="footer-promo-text">Подпишитесь на рассылку</p>
           <form action="sign-up" class="form-footer">
             <label for="name" for="email" class="footer-lable"> </label>
-            <input type="email" name="email" placeholder="E-mail" id="email" class="footer-input" />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              id="email"
+              class="footer-input"
+              required
+            />
             <button type="sign-in" class="footer-sign-in">
               Подписаться
               <svg class="footer-soc-icon footer-send" width="24" height="24">
@@ -428,8 +435,6 @@
 
     <!--                      MODAL                         -->
 
-    <button>Открыть модалку</button>
-    <p></p>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -495,6 +500,7 @@
               class="modal-comment"
             ></textarea>
           </div>
+
           <div class="form-group privacy">
             <input
               type="checkbox"
@@ -509,11 +515,9 @@
               <a href="" class="privacy-check">Условия договора</a>
             </label>
           </div>
-
           <button class="submit submit-btn" type="submit">Отправить</button>
         </form>
       </div>
-      Условия договора
     </div>
     <script src="./js/modal.js"></script>
   </body>
